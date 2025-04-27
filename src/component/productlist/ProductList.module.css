@@ -1,0 +1,215 @@
+.loadingData {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+.allData {
+  display: flex;
+}
+
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  position: relative;
+  border-radius: 8px;
+  /* width: 240px; */
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.product h4 {
+  text-align: left;
+  margin-top: 10px;
+  font-family: "simp", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+
+}
+
+.product span {
+  font-family: "simp", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #888792;
+}
+
+.product span a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.productImage {
+  height: 300px;
+  object-fit: contain;
+  padding: 16px;
+  width: 240px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.productTitle {
+  position: absolute;
+  /* Position it relative to the .product box */
+  top: -20px;
+  /* Move it above the box */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 4px 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.product p {
+  font-size: 1rem;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+/* Filter */
+.selectOuterFilter {
+  padding: 25px 0;
+  border-bottom: 1px solid #E5E5E5;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.selectOuterFilter h5 {
+  font-family: "simp", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.selectOuterFilter input {
+  width: 22px;
+  height: 22px;
+}
+
+.selectFilter {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.selectFilter p {
+  color: black;
+}
+
+.selectInnerFilter {
+  display: flex;
+  padding: 25px 0;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.selectInnerFilter h5 {
+  font-family: "simp", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.selectFilter div ul {
+  list-style: none;
+}
+
+.customFilter {
+  width: 300px;
+  margin-right: 10px;
+}
+
+.filterList {
+  padding: 10px 0;
+}
+
+.filterList ul li {
+  padding: 10px 0;
+}
+
+.filterList ul li a>:first-child {
+  font-family: "simp", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0px;
+
+}
+
+@media (max-width: 768px) {
+  .selectOuterFilter h5{
+    font-size: 14px;
+  }
+  .selectOuterFilter input {
+    width: 15px;
+    height: 15px;
+  }
+  .selectInnerFilter h5{
+    font-size: 14px;
+  }
+  .filterList ul li  a {
+    font-family: "simp", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .filterList ul li{
+    font-size: 14px;
+  }
+  .filterList ul li input{
+    height: 10px;
+  }
+  .customFilter {
+    position: absolute;
+    background-color: white;
+    z-index: 999;
+    padding: 20px;
+    border-radius: 5px;
+    top: auto;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+}
+@media (max-width: 585px) {
+  .productList {
+    justify-content: space-between;
+  }
+
+  .product h4 {
+    font-family: "simp", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .product span {
+    font-weight: 400;
+    font-size: 10px;
+  }
+  .productImage{
+    width: 160px;
+  }
+}
+@media (max-width: 430px){
+  .productImage{
+    width: 300px;
+  }
+  .productList{
+    justify-content: center;
+  }
+}

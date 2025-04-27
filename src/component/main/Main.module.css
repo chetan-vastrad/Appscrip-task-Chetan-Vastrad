@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'simp';
+    src: url('../../assets/font/SimplonNorm-Regular-WebS.woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+.main{
+    padding: 60px 100px;
+}
+.mainHeader{
+    text-align: center;
+}
+.mainHeader h1{
+font-family: "simp", sans-serif;
+font-weight: 400;
+font-size: 60px;
+line-height: 100%;
+letter-spacing: 1px;
+text-align: center;
+vertical-align: middle;
+text-transform: uppercase;
+color: #252020;
+}
+.mainHeader p{
+    color: #252020;
+    padding:30px 0 0 0;
+    font-family: "simp", sans-serif;
+font-weight: 400;
+font-size: 22px;
+line-height: 40px;
+letter-spacing: 0px;
+text-align: center;
+padding-bottom: 60px !important;
+}
+.mobileHeaderMenu{
+    display: none;
+}
+.innerfilterSection{
+    cursor: pointer;
+}
+.innerfilterSection h5{
+ font-family: "simp",sans-serif;   
+font-weight: 700;
+font-size: 18px;
+line-height: 40px;
+letter-spacing: 0px;
+text-transform: uppercase;
+}
+.innerfilterSection > h5:last-child{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    text-decoration: underline;
+    color: #888792;
+}
+.innerfilterSection > h5:last-child i{
+    margin-right: 8px;
+}
+.filterSectionHeader{
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    background-color: white;
+}
+.filterSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    position: relative;
+}
+.filterSection p{
+color: black;
+padding-bottom: 0;
+}
+.filterSection .innerfilterSection{
+    display: flex;
+    gap: 100px;
+}
+.innerfilterSection p{
+    cursor: pointer;
+}
+.innerfilterSection i.rotate{
+    transform: rotate(180deg);
+}
+.recommendedSection{
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.recommendedSection h5{
+    font-family: "simp",sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+.recommendedSection ul{
+list-style: none;
+background-color: white;
+padding:30px;
+text-align: right;
+position: absolute;
+right: 0px;
+z-index: 9999;
+box-shadow: 0px 0px 7px 1px #A3AAAF33;
+width: 150px;
+top: 50px;
+}
+.recommendedSection ul li{
+    padding-bottom: 10px;
+    font-family: "simp", sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 40px;
+letter-spacing: 0px;
+text-align: right;
+text-transform: uppercase;
+color: #252020;
+}
+.recommendedSection ul li:hover{
+    color: black;
+}
+.recommendedSection i{
+    margin-left: 10px;
+}
+.recommendedSection i.rotated {
+    transform: rotate(180deg);
+  }
+  @media (max-width: 768px) {
+    .itemsLength{
+        display: none;
+    }
+    .recommendedSection h5{
+        font-size: 14px;
+    }
+    .recommendedSection ul{
+        width: 120px;
+        right: -35px;
+        padding: 20px;
+    }
+    .recommendedSection ul li{
+        font-size: 13px;
+    }
+        .innerfilterSection>h5:last-child {
+            font-family: "simp", sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            color: #252020;
+            text-decoration: none;
+        }
+    .filterSection{
+        justify-content: space-around;
+    }
+    .mainHeader{
+        padding: 0;
+    }
+    .innerfilterSection h5:nth-child(1){
+        display: none;
+    }
+    .mobileCenterBar::before{
+        content: "|";
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    }
+    .mobileHeaderMenu{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .mobileHeaderMenu ul{
+        display: flex;
+        list-style: none;
+        gap: 5px;
+        color: gray;
+        font-size: 15px;
+    }
+    .mobileHeaderMenu ul li:nth-child(1){
+        font-family: "simp", sans-serif;
+font-weight: 400;
+font-size: 12px;
+color: #BFC8CD;
+    }
+    .mobileHeaderMenu ul li:nth-child(2){
+        font-family: "simp", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+    }
+    .mobileHeaderMenu ul li:nth-child(2)::before{
+        content: "| ";
+    }
+    .mobileHeaderMenu ul li:nth-child(2){
+        color: black;
+    }
+    .main{
+        padding: 20px;
+    }
+    .mainHeader h1{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        text-align: center;
+        vertical-align: middle;
+        text-transform: uppercase;
+        
+    }
+    .mainHeader p{
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+padding: 20px 0 10px 0 !important;
+    }
+  }
+  @media (max-width: 480px) {
+    .mainHeader{
+        padding: 0;
+        font-size: 11px;
+    }
+}
