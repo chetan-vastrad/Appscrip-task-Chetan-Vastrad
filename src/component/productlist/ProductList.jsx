@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./ProductList.module.css";
-import heart from "../../assets/icons/heart.png"
+import heart from "../../assets/icons/heart.png";
 const ProductList = (props) => {
   console.log(props);
 
@@ -25,7 +25,7 @@ const ProductList = (props) => {
   const toggleFilterVisibility = (index) => {
     setVisibleFilter(visibleFilter === index ? null : index);
   };
-console.log();
+  console.log();
 
   const filters = [
     { title: "IDEAL FOR", options: ["Men", "Women", "Baby & Kids"] },
@@ -35,7 +35,7 @@ console.log();
     { title: "SEGMENT", options: ["Cotton", "Polyester", "Wool"] },
     { title: "SUITABLE FOR", options: ["Cotton", "Polyester", "Wool"] },
     { title: "RAW MATERIAL", options: ["Cotton", "Polyester", "Wool"] },
-    { title: "PATTERN", options: ["Cotton", "Polyester", "Wool"] }
+    { title: "PATTERN", options: ["Cotton", "Polyester", "Wool"] },
   ];
 
   return (
@@ -89,13 +89,16 @@ console.log();
         {products.map((product) => (
           <div key={product.id} className={styles.product}>
             <img
-                src={product.image}
-                alt={product.title}
-                className={styles.productImage}
-              />
+              src={product.image}
+              alt={product.title}
+              className={styles.productImage}
+            />
             {/* <p>${product.price}</p> */}
             <h4>Product Name</h4>
-            <span><a>Sign in</a> or Create an account to see  <img src={heart} alt="Like Image" /></span>
+            <span>
+              <a>Sign in</a> or Create an account to see{" "}
+              <img src={heart} alt="Like Image" />
+            </span>
           </div>
         ))}
       </div>

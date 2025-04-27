@@ -6,7 +6,7 @@ import searchicon from "../../assets/icons/search.png";
 import heart from "../../assets/icons/heart.png";
 import bag from "../../assets/icons/bag.png";
 import profile from "../../assets/icons/profile.png";
-import arrow from "../../assets/icons/arrow.png"
+import arrow from "../../assets/icons/arrow.png";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const showMenuHandelr = () => {
@@ -46,12 +46,12 @@ const Header = () => {
           </div>
           <h2 className={styles.mainLogo}>LOGO</h2>
           <div className={`${styles.middleHeaderIcons}`}>
-           <img src={searchicon} alt="Search" />
-           <img src={heart} alt="Like"  />
-           <img src={bag} alt="Bag" />
-           <img src={profile} alt="Profile" />
+            <img src={searchicon} alt="Search" />
+            <img src={heart} alt="Like" />
+            <img src={bag} alt="Bag" />
+            <img src={profile} alt="Profile" />
             <span>
-              ENG <img src={arrow} alt="Bottom Arrow"/>
+              ENG <img src={arrow} alt="Bottom Arrow" />
             </span>
           </div>
         </div>
@@ -61,11 +61,21 @@ const Header = () => {
           }`}
         >
           <ul>
-            <li><a href="">SHOP</a></li>
-            <li><a href="">SKILLS</a></li>
-            <li><a href="">STORIES</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">CONTACT US</a></li>
+            <li>
+              <a href="">SHOP</a>
+            </li>
+            <li>
+              <a href="">SKILLS</a>
+            </li>
+            <li>
+              <a href="">STORIES</a>
+            </li>
+            <li>
+              <a href="">ABOUT</a>
+            </li>
+            <li>
+              <a href="">CONTACT US</a>
+            </li>
           </ul>
         </div>
       </div>

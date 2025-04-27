@@ -219,7 +219,8 @@ p {
   list-style: none;
   margin-bottom: 10px;
 }
-.footerSectionBottom ul li a{
+
+.footerSectionBottom ul li a {
   text-decoration: none;
   color: white;
 }
@@ -288,23 +289,28 @@ p {
   text-align: center;
   margin-top: 30px;
 }
-.contactUsSection p a{
+
+.contactUsSection p a {
   color: white;
   text-decoration: none;
 }
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
-  .footerSection button{
+  .footerSection button {
     height: auto;
   }
+
   .collg8 {
     flex: 0 0 100%;
     max-width: 100%;
   }
+
   .collg12 {
     flex: 0 0 100%;
     max-width: 100%;
   }
+
   .footerSection {
     padding: 20px
   }
@@ -334,11 +340,13 @@ p {
   .footerSectionTop_2 {
     padding-top: 20px;
   }
-  .footerSectionTop_2 h3{
-font-weight: 700;
-font-size: 16px;
-line-height: 100%;
+
+  .footerSectionTop_2 h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
   }
+
   .contactUsSection {
     display: flex;
     flex-wrap: wrap;
@@ -380,11 +388,13 @@ line-height: 100%;
     justify-content: space-between;
     cursor: pointer;
   }
-  .footerHeader h3{
-font-weight: 700;
-font-size: 16px;
+
+  .footerHeader h3 {
+    font-weight: 700;
+    font-size: 16px;
 
   }
+
   .footerContent.hidden {
     display: none !important;
   }
@@ -392,9 +402,11 @@ font-size: 16px;
   .footerContent.visible {
     display: block;
   }
-  .footerContent li{
+
+  .footerContent li {
     font-size: 13px;
   }
+
   .followus {
     border-bottom: 1px solid #ddd;
   }
@@ -418,28 +430,34 @@ font-size: 16px;
   .footerHeader i {
     display: block;
   }
-  .contactUsSection p{
-font-weight: 400;
-font-size: 14px;
+
+  .contactUsSection p {
+    font-weight: 400;
+    font-size: 14px;
   }
-  .bottomText{
+
+  .bottomText {
     margin-top: 10px;
   }
 }
-@media (max-width: 585px){
+
+@media (max-width: 585px) {
   .collg8 {
     flex: 0 0 100%;
     max-width: 100%;
   }
+
   .collg12 {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .footerSectionTop_1 h3{
+
+  .footerSectionTop_1 h3 {
     font-size: 16px;
   }
-  .footerSectionTop_1 p{
-font-weight: 400;
-font-size: 14px;
+
+  .footerSectionTop_1 p {
+    font-weight: 400;
+    font-size: 14px;
   }
 }
